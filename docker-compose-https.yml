@@ -2,7 +2,7 @@ version: '3'
 services:
   foundryvtt:
     container_name: foundryvtt
-    image: node:14.15.5-alpine3.13
+    image: node:18-alpine
     restart: always
     command: ["node", "/foundryvtt/resources/app/main.js", "--headless"]
     volumes:
